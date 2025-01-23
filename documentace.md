@@ -37,8 +37,8 @@
 - Po každém odstranění největšího prvku obnovuje haldu.
 
 ### Vhodnost a omezenost využití
-- **Vhodnost:** Efektivní časová složitost O(n log n), stabilní výkon.
-- **Omezenost:** Vyžaduje další paměť pro haldu, není stabilní.
+- **Vhodnost:** Efektivní časová složitost O(n log n).
+- **Omezenost:** Vyžaduje další paměť pro haldu.
 
 ---
 
@@ -48,7 +48,7 @@
 - Slévá podseznamy zpět ve správném pořadí.
 
 ### Vhodnost a omezenost využití
-- **Vhodnost:** Stabilní, časová složitost O(n log n). Vhodné pro velké datové sady.
+- **Vhodnost:** Časová složitost O(n log n). Vhodné pro velké datové sady.
 - **Omezenost:** Vyžaduje další paměť (O(n)), což může být nevýhodou.
 
 ---
@@ -60,14 +60,13 @@
 
 ### Vhodnost a omezenost využití
 - **Vhodnost:** Velmi rychlý v praxi (O(n log n) v průměru), efektivní pro velké datové sady.
-- **Omezenost:** V nejhorším případě časová složitost O(n²), není stabilní.
+- **Omezenost:** V nejhorším případě časová složitost O(n²).
 
 ---
 
 ## 7. Radix Sort
 ### Popis fungování
 - Netřídí podle porovnávání, ale na základě číslic nebo znaků. Prochází číslice od nejméně významné po nejvýznamnější.
-- Využívá podpůrný algoritmus, např. Counting Sort.
 
 ### Vhodnost a omezenost využití
 - **Vhodnost:** Vhodný pro čísla s pevnou délkou nebo konkrétní datové struktury (časová složitost O(nk), kde k je počet číslic).
@@ -77,12 +76,12 @@
 
 ## Komparace jednotlivých algoritmů
 
-| Algoritmus       | Časová složitost (průměr) | Časová složitost (nejhorší) | Paměťová složitost | Stabilita |
-|-------------------|--------------------------|-----------------------------|--------------------|-----------|
-| Selection Sort    | O(n²)                   | O(n²)                      | O(1)               | Ne        |
-| Bubble Sort       | O(n²)                   | O(n²)                      | O(1)               | Ano       |
-| Insertion Sort    | O(n²)                   | O(n²)                      | O(1)               | Ano       |
-| Heapsort          | O(n log n)              | O(n log n)                 | O(1)               | Ne        |
-| Merge Sort        | O(n log n)              | O(n log n)                 | O(n)               | Ano       |
-| Quick Sort        | O(n log n)              | O(n²)                      | O(log n)           | Ne        |
-| Radix Sort        | O(nk)                   | O(nk)                      | O(n + k)           | Ano       |
+| Algoritmus       | Časová složitost (průměr) | Časová složitost (nejhorší) | Paměťová složitost |
+|-------------------|--------------------------|-----------------------------|--------------------|
+| Selection Sort    | O(n²)                   | O(n²)                      | O(1)               |
+| Bubble Sort       | O(n²)                   | O(n²)                      | O(1)               |
+| Insertion Sort    | O(n²)                   | O(n²)                      | O(1)               |
+| Heapsort          | O(n log n)              | O(n log n)                 | O(1)               |
+| Merge Sort        | O(n log n)              | O(n log n)                 | O(n)               |
+| Quick Sort        | O(n log n)              | O(n²)                      | O(log n)           |
+| Radix Sort        | O(nk)                   | O(nk)                      | O(n + k)           |
